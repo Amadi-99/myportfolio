@@ -30,10 +30,10 @@
   
 /*===== Margenes =====*/
     --mb-1: .5rem;
-    --mb-2: .5rem;
-    --mb-3: .5rem;
-    --mb-4: .5rem;
-    --mb-5: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
 
   /*===== z index =====*/
    --z-fixed: 100;  
@@ -117,7 +117,7 @@ img{
     margin-bottom: .25rem;
 }
 
-/*===== LAYOUT =====*/
+/*===== LAYOUT * =====*/
 .bg-grid{
     max-width: 1024px;
     display: grid;
@@ -127,6 +127,7 @@ img{
     margin-left: var(--mb-2);
     margin-right: var(--mb-2);
 }
+
 
 .l-header{
     width: 100%;
@@ -212,7 +213,6 @@ img{
     align-items: center;
     height: max-content;
     text-align: center;
-    padding-top: 5rem;
 }
 
 .home_img{
@@ -261,6 +261,10 @@ img{
     background-color: var(--first-color-dark);
 }
 
+.home_button{
+    width: 100%;
+}
+
 /*BUTTONS*/
 
 .button{
@@ -275,4 +279,13 @@ img{
 
 .button:hover{
    background-color: var(--first-color-dark); 
+}
+
+.button_light{
+    background-color: var(--first-color-lighten);
+    color: var(--first-color);
+}
+
+.button_light:hover{
+    color: var(--first-color-lighten);
 }
