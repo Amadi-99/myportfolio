@@ -444,3 +444,54 @@ img{
 .experiences_content:hover .experiences_description{
     color: var(--first-color-lighten);
 }
+
+/*RESEARCH*/
+.research_container{
+    row-gap: 2rem;
+}
+
+.research_data{
+    text-align: center;
+}
+
+.research_description{
+    margin-bottom: var(--mb-4);
+}
+
+.research_img{
+    width: 150px;
+    border-radius: .5rem;
+    margin: 0 auto;
+}
+
+.research_information{
+    margin-bottom: var(--mb-4);
+}
+
+.research_information-title{
+    font-size: var(--h3-font-size);
+    color: var(--first-color-dark);
+    margin-bottom: var(--mb-2);
+}
+
+.research_information-data{
+    display: flex;
+    align-items: center;
+    padding-left: 1.5rem;
+    margin-bottom: var(--mb-3);
+}
+
+.research_information-icon{
+    font-size: 1.5rem;
+    color: var(--first-color);
+    margin-right: var(--mb-4);
+}
+
+.research_information-subtitle{
+    display: block;
+    font-weight: var(--font-semi-bold);
+}
+
+.research_information-subtitle-small{
+    font-size: var(--small-font-size);
+}
