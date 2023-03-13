@@ -119,7 +119,6 @@ img{
 
 /*===== LAYOUT * =====*/
 .bg-grid{
-    max-width: 1024px;
     display: grid;
     grid-template-columns: 100%;
     column-gap: 2rem;
