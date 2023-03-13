@@ -495,3 +495,48 @@ img{
 .research_information-subtitle-small{
     font-size: var(--small-font-size);
 }
+
+/*PROJECTS*/
+.projects_container{
+    justify-items: center;
+    row-gap: 2rem;
+}
+
+.projects_img{
+    position: relative;
+    overflow: hidden;
+    border-radius: .5rem;
+}
+
+.projects_data{
+    position: absolute;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(204, 75, 44, .7);
+    border-radius: .5rem;
+    transition: .3s;
+}
+
+.projects_link{
+    display: inline-flex;
+    font-size: 1.5rem;
+    background-color: var(--first-color-lighten);
+    color: var(--first-color);
+    padding: .25rem;
+    border-radius: .25rem;
+    margin-bottom: var(--mb-2);
+}
+
+.projects_title{
+    font-size: var(--h2-font-size);
+    color: var(--first-color-lighten);
+}
+
+.projects_img:hover .projects_data{
+    bottom: 0;
+}
