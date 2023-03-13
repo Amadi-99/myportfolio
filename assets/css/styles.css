@@ -61,7 +61,7 @@ html{
 }
 
 body{
-    margin: var(--header-height) 0 0 0;
+    margin: var(--header-height);
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
@@ -338,4 +338,109 @@ img{
 
 .about_information-subtitle-small{
     font-size: var(--small-font-size);
+}
+
+
+/*EDUCATION*/
+.education_container{
+    row-gap:2rem;
+}
+
+.education_content{
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+}
+
+.education_year, .education_race{
+    font-size: var(--h3-font-size);
+    margin-bottom: .25rem;
+}
+
+.education_university, .education_specialty{
+    display: block;
+    font-size: var(--smaller-font-size);
+}
+
+.education_year, .education_university{
+    text-align: right;
+}
+
+.education_time{
+    padding: 0 1rem;
+    justify-self: center;
+}
+
+.education_rounder{
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: var(--first-color);
+    border-radius: 50%;
+}
+
+.education_rounder::before{
+    content: '';
+    position: absolute;
+    transform: translate(-4px, -4px);
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--first-color);
+    border-radius: 50%;
+}
+
+.education_line{
+    display: block;
+    height: 90%;
+    width: 2px;
+    background-color: var(--first-color);
+    transform: translate(5px, -4px);
+}
+
+
+/*EXPERIENCE*/
+.experiences_container{
+    row-gap: 2rem;
+}
+
+.experiences_content{
+    padding: 1.5rem .5rem;
+    border: 2px solid var(--first-color);
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.experience_image{
+    width: 150px;
+    border-radius: .5rem;
+    font-size: 2rem;
+    padding: .5rem;
+    margin-bottom: var(--mb-2);
+}
+
+.experiences_title{
+    font-size: 1.25rem;
+    color: var(--first-color-dark);
+    margin-bottom: var(--mb-1);
+}
+
+.experiences_content, .experience_image, .experiences_description, .experiences_title{
+    transition: .5s;
+}
+
+.experiences_content:hover{
+    background-color: var(--first-color);
+}
+
+.experiences_content:hover .experience_image{
+    background-color: var(--first-color-lighten);
+    color: var(--first-color);
+}
+
+.experiences_content:hover .experiences_title{
+    color: var(--first-color-lighten);
+}
+
+.experiences_content:hover .experiences_description{
+    color: var(--first-color-lighten);
 }
